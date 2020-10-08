@@ -20,11 +20,11 @@ object Ex1 {
 		
 		println(algorithm.probability(test, "Test"))*/
 	}
-	abstract class Persoana(){
+	abstract class Persoana(val nume:String,val prenume:String){
 
 	}
 
-	class Student(var nume:String,var prenume:String,var an:Integer,var materii : Array[(String,Integer)]) extends Persoana{
+	class Student(override val nume:String,override val prenume:String,var an:Integer,var materii : Array[(String,Integer)]) extends Persoana(nume,prenume){
 
 
 		def setNota(materie:String,nota:Integer): Unit ={
@@ -45,7 +45,7 @@ object Ex1 {
 				println(a) }
 		}
 	}
-	class Profesor(var nume:String,var prenume:String,var materie:String) extends Persoana{
+	class Profesor(override val nume:String,override val prenume:String,var materie:String) extends Persoana(nume,prenume){
 
 	}
 }
