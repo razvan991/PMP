@@ -24,15 +24,16 @@ object Ex1 {
 	def main(args: Array[String]): Unit =
 	{
 		//Confirmat covid ->  sansa sa ai febra / tuse
-		
-		Covid.observe(true)
+
+		/*Covid.observe(true)
 		val alg = VariableElimination(febra, tuse)
 		alg.start()
 		println("Probabilitatea sa ai febra : " + alg.probability(febra, true))
 		println("Probabilitatea sa tusesti : " + alg.probability(tuse, true))
-		alg.kill
+		alg.kill*/
 
 		//Nu ai tuse / febra -> sansa sa fii asimptomatic
+		// daca nu pun prima parte a ex in comentarii , imi da probabilitate 1% , daca e pus in comentariu imi da o valoare buna
 		febra.observe(false)
 		tuse.observe(false)
 		val alg2 = VariableElimination(Covid)
