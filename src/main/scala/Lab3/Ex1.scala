@@ -33,7 +33,7 @@ object Ex1 {
 		alg.kill*/
 
 		//Nu ai tuse / febra -> sansa sa fii asimptomatic
-		// daca nu pun prima parte a ex in comentarii , imi da probabilitate 1% , daca e pus in comentariu imi da o valoare buna
+		// daca nu pun prima parte a ex in comentarii , imi da probabilitate 1 , daca e pus in comentariu imi da o valoare buna
 		febra.observe(false)
 		tuse.observe(false)
 		val alg2 = VariableElimination(Covid)
