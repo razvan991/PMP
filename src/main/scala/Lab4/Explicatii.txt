@@ -1,0 +1,37 @@
+Exercitiul 2 (din carte , ex 1 din lab) :
+-programul nemodificat
+If today's greeting is "Oh no, not again", todayÔÇÖs weather is sunny with probability 0.0.
+-programul modificat(+ sidesbed)
+If today's greeting is "Oh no, not again", todayÔÇÖs weather is sunny with probability 0.1219512195121951.
+
+Exercitiul 3 (din carte , ex 1 din lab):
+0.52
+Explicatii
+In primul program variabila z este initializata cu x => variabila w o sa aiba valoarea true deoarece x === z
+In al doilea program , variabila z este initializata cu y => avem 40% probabilitate sa fie true si 60% probabilitate sa fie false, iar pentru x === z => x trebuie sa aiba aceeasi valoare cu y,
+adica ambele sa fie true sau ambele false => 0.4 x 0.4 = 0.16  si 0.6 x 0.6 = 0.36 => 0.16+0.36 = 0.52
+
+Exercitiul 4 (din carte , ex 2 din lab):
+0.055
+Explicatii
+-2 zaruri:
+Avem 36 cazuri posibile , iar ca suma sa fie 11 putem arunca (5,6) sau (6,5) => 2 cazuri fav
+P=2/36=0.055
+Numarul maxim de zaruri pentru care ar merge aceasta solutie este 5.
+
+Exercitiul 5 (din carte , ex 3 din lab):
+0.4
+Explicatii
+Primul zar 6 iar suma >8 ( 6,3 6,4 6,5 6,6 ) => 4/6 ???
+
+
+Exercitiul 6 (din carte , ex 4 din lab):
+0.004629629629629629
+Explicatii
+
+
+
+
+
+
+

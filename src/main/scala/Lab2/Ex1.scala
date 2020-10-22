@@ -2,7 +2,6 @@ package Lab2
 
 import com.cra.figaro.language._
 import com.cra.figaro.algorithm.sampling._
-import oracle.jpub.runtime.MutableArray
 
 object Ex1 {
 	def main(args: Array[String]) {
