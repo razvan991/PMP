@@ -24,3 +24,9 @@ runMain Lab4.Ex1
 runMain Lab5.Ex1
 runMain Lab6.Ex1
 runMain Lab7.Ex1
+runMain Lab5.Ex1
+runMain Partial1.Ex1
+sbt
+runMain Partial1.Ex1
+runMain Lab3.Burglary
+runMain Partial1.Ex1
