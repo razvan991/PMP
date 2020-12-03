@@ -30,3 +30,6 @@ sbt
 runMain Partial1.Ex1
 runMain Lab3.Burglary
 runMain Partial1.Ex1
+runMain Lab8.Ex1
+runMain Partial1.Ex1
+runMain Lab9.Ex1

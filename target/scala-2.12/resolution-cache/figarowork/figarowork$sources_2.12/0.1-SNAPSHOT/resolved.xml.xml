@@ -4,7 +4,7 @@
 		module="figarowork$sources_2.12"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20201008065413"
+		publication="20201203081025"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -32,6 +32,9 @@
 		</dependency>
 		<dependency org="junit" name="junit" rev="4.8.2" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="junit" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="xml-apis" name="xml-apis" rev="1.3.03" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="xml-apis" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="com.typesafe.akka" name="akka-actor_2.12" rev="2.4.18" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master" info.apiURL="http://doc.akka.io/api/akka/2.4.18">
 			<artifact name="akka-actor_2.12" type="src" ext="jar" conf="sources" e:classifier="sources"/>
@@ -75,6 +78,9 @@
 		<dependency org="com.cra.figaro" name="figaro_2.12" rev="5.0.0.0" transitive="false" conf="compile->default,compile,runtime,default(compile),master;runtime->default,compile,runtime,default(compile),master;test->default,compile,runtime,default(compile),master;compile-internal->default,compile,runtime,default(compile),master;runtime-internal->default,compile,runtime,default(compile),master;test-internal->default,compile,runtime,default(compile),master">
 			<artifact name="figaro_2.12" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
+		<dependency org="asm" name="asm" rev="3.3.1" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="asm" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
 		<dependency org="org.typelevel" name="macro-compat_2.12" rev="1.1.1" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="macro-compat_2.12" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
@@ -90,6 +96,9 @@
 		<dependency org="org.scalanlp" name="breeze-macros_2.12" rev="0.13.1" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="breeze-macros_2.12" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
+		<dependency org="net.sourceforge.f2j" name="arpack_combined_all" rev="0.1" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="arpack_combined_all" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
 		<dependency org="com.chuusai" name="shapeless_2.12" rev="2.3.2" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="shapeless_2.12" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
@@ -101,6 +110,9 @@
 		</dependency>
 		<dependency org="com.typesafe" name="config" rev="1.3.0" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="config" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.prefuse" name="prefuse" rev="beta-20071021" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
+			<artifact name="prefuse" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="net.sf.jsci" name="jsci" rev="1.2" transitive="false" conf="compile->compile,runtime(*),master(compile),runtime,compile(*),master;runtime->compile,runtime(*),master(compile),runtime,compile(*),master;test->compile,runtime(*),master(compile),runtime,compile(*),master;compile-internal->compile,runtime(*),master(compile),runtime,compile(*),master;runtime-internal->compile,runtime(*),master(compile),runtime,compile(*),master;test-internal->compile,runtime(*),master(compile),runtime,compile(*),master">
 			<artifact name="jsci" type="src" ext="jar" conf="sources" e:classifier="sources"/>
