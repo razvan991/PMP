@@ -16,19 +16,19 @@ object markov {
 	Constant(8)("learned",initial)
 	Constant(5)("difficulty",initial)
 
-	def transition(learned: Int,difficulty: Int): (Element[(Int,Int,Int)])={
-		
-	}
+	/*def transition(learned: Int,difficulty: Int): (Element[(Int,Int,Int)])={
+
+	}*/
 
 	def nextUniverse(previous: Universe): Universe ={
 		val next=Universe.createNew()
 		val previousSeated=previous.get[Int]("learned")
 		val previousWaiting=previous.get[Int]("difficulty")
-		val newState=Chain(previousSeated,previousWaiting,transition _)
+		//val newState=Chain(previousSeated,previousWaiting,transition _)
 
-		Apply(newState,(s: (Int,Int,Int)) -> s._1)("learned",next)
-		Apply(newState,(s: (Int,Int,Int)) -> s._2)("score",next)
-		Apply(newState,(s: (Int,Int,Int)) -> s._3)("difficulty",next)
+		//Apply(newState,(s: (Int,Int,Int)) -> s._1)("learned",next)
+		//Apply(newState,(s: (Int,Int,Int)) -> s._2)("score",next)
+		//Apply(newState,(s: (Int,Int,Int)) -> s._3)("difficulty",next)
 		next
 	}
 
