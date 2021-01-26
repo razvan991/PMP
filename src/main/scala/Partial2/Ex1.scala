@@ -42,7 +42,9 @@ object Ex1 {
 	def main(args: Array[String]) {
 		val hours=10
 		for {hours <- 1 until hours}{
-			println()
+			if(hours==1){
+				
+			}
 		}
 
 	}
